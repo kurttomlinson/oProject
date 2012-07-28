@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<files>
+		<file href="./files/VU Meter V1.zip"><description>VU Meter GERBER</description></file>
+		<file href="./files/VU Meter.sch"><description>VU Meter EAGLE Schematic</description></file>
+		<file href="./files/VU Meter.brd"><description>VU Meter EAGLE Board</description></file>
+	</files>
+</root>

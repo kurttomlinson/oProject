@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file contains a list of all the xml files that need to be parsed in this project. The number and name of these files don't matter as long as the Open Hardware Hub XML format is respected within those files. this means that the content of all these files can be combined into one file and it will still function properly. They are separated here for clarity. -->
+<!-- Attributes are only used to specify paths or item orders between items with the same tag. -->
+<manifest>
+	<file href="bom.xml" />
+	<file href="files.xml" />
+	<file href="project.xml" />
+	<file href="steps.xml" />
+</manifest>
