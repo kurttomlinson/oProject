@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project>
-	<files>
-		<file href="./files/VU Meter V1.zip"><description>VU Meter GERBER</description></file>
-		<file href="./files/VU Meter.sch"><description>VU Meter EAGLE Schematic</description></file>
-		<file href="./files/VU Meter.brd"><description>VU Meter EAGLE Board</description></file>
-	</files>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Kurt/Desktop/oProject/Schemas/oProject.xsd">
+	<downloads>
+		<file url="./files/VU Meter V1.zip" order="1"><description>VU Meter GERBER</description></file>
+		<file url="./files/VU Meter.sch" order="2"><description>VU Meter EAGLE Schematic</description></file>
+		<file url="./files/VU Meter.brd" order="3"><description>VU Meter EAGLE Board</description></file>
+	</downloads>
 </project>
