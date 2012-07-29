@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XmlStudioProjectOptions Version="10.1.2.4113">
+  <File>.\Documents\description.xml</File>
   <File>.\Documents\manifest.xml</File>
   <File>.\Schemas\oProject.xsd</File>
-  <File>.\Documents\bom.xml</File>
+  <File>.\Documents\steps.xml</File>
+  <File>.\Documents\downloads.xml</File>
+  <File>.\Documents\parts.xml</File>
 </XmlStudioProjectOptions>

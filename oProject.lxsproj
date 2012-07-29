@@ -2,11 +2,11 @@
 <XmlStudioProject Version="10.1.2.4113">
   <Project Name="">
     <Folder Name="Documents">
-      <File Name="bom.xml" />
-      <File Name="files.xml" />
       <File Name="manifest.xml" />
-      <File Name="project.xml" />
       <File Name="steps.xml" />
+      <File Name="description.xml" />
+      <File Name="downloads.xml" />
+      <File Name="parts.xml" />
     </Folder>
     <Folder Name="Schemas">
       <File Name="oProject.xsd" />
