@@ -10,13 +10,46 @@ The only required file in an oProject is manifest.xml. It must be found in the r
 The manifest file contains a root <project> element. Within the project element is a manifest element. The manifest element contains file elements with a url attribute that points to all of the oProject XML files for the project. In truth, all of the textual content of an oProject can be contained within the manifest.xml since all oProject files are validated with the same XML Schema Document, but this is not encouraged. Keeping all of the textual content in one file would reduce modularization and result in large, unwieldy xml files. For this reason, we recommend splitting your project into four oProject files: description.xml, downloads.xml, parts.xml, and steps.xml.
 
 ###Description file
+The description file should hold general information about the project itself.
+
+*	name - Content: The name of your project. Attributes: None.
+*	author - Content: The name of the person/group responsible for the project. Attributes: None.
+*	images - Content: None. Attributes: None.
+	*	image - Content: None. Attributes: "url" is a relative path to the image. "order" determines the order in which the images are shown. Images are shown in ascending order starting with 1.
+		*	description - Content: A description of the image. Attributes: None.
+*	video - Content: None. Attributes: "url" is an absolute path to a YouTube video of the project. (Other services may be allowed depending on the project hosting platform.)
+*	description - Content: An HTML-formatted description of your project. Attributes: None.
+*	license - Content: None. Attributes: "url" is a relative path to the license file.
+	*	name - Content: The name of the license under which your project is licensed. Attributes: None.
 
 ###Downloads file
+The downloads file should those files which are necessary to reproduce your project (such as compiled binaries, GERBER files, and other files that are in a final and usable form. Source code, schematics, and board files should be included in the project directory but not highlighted by the downloads folder. These files are the bare minimum needed to build your project in a production environment.
+
+*	downloads - Content: None. Attributes: None.
+	*	file - Content: A descriptive name for the file. Attributes: "url" is a relative path to the file. "order" determines the order in which the download files are shown. Download files are shown in ascending order starting with 1.
 
 ###Parts file
+The parts file is a bill of materials along with links to suppliers. This makes it easy for consumers of your open source project to source their own parts to reproduce your project.
+
+*	parts - Content: None. Attributes: None.
+	*	part - Content: None. Attributes: "url" is an absolute path to a supplier's page for the part. "order" determines the order in which the parts are shown. Parts are shown in ascending order starting with 1.
+		*	SKU - Content: The part's manufacturer's part number. Attributes: None.
+		*	description - Content: A description of the part (value, ratings, package type, etc.) Attributes: None.
+		*	quantity - Content: How many of this particular part are needed. Attributes: None.
+		*	external\_reference - Content: None. Attributes: None.
+			*	external\_id - Content: The unique id used to identify the part at the external\_source. Attributes: None.
+			*	external\_source - Content: The external source that is used to provide an easy means to quickly acquire the part. Acceptable sources are currently limitied to Digi-Key and Octopart. Attributes: None.
+		*	image - Content: None. Attributes: "url" is a relative path to the image.
 
 ###Steps file
+The steps file gives step-by-step instructions for building the project from the parts listed in the parts file and using the files highlighted by the downloads file.
 
+*	steps - Content: None. Attributes: None.
+	*	step - Content: None. Attributes: "order" determines the order in which the steps are shown. Steps are shown in ascending order starting with 1.
+		*	title - Content: A title for the step. Attributes: None.
+		*	description - Content: A detailed, HTML-formatted explanation of how to execute the step. Attributes: None.
+		*	images - Content: None. Attributes: None.
+			*	image - Content: None. Attributes: "url" is a relative path to the image. "order" determines the order in which the images are shown. Images are shown in ascending order starting with 1.
 ##Schema
 
 The XML schema file for oProject can be found in the [Schemas](https://github.com/kurttomlinson/oProject/tree/master/Schemas) folder.
