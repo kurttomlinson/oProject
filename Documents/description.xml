@@ -10,7 +10,7 @@
         </images>
 		<video url="http://www.youtube.com/watch?v=4QJKJ-6NRYU" />
 		<description>
-			A VU meter is used to display the loudness of an audio signal. This open source VU meter lights up ten LEDs to show how loud a mono audio signal is. Two of these can be made to show the loudness of each channel in a stereo signal. This circuit is similar to "Mono VU Meter Breadboard" except it is built on a PCB and requires soldering skills to assemble.
+			<![CDATA[A VU meter is used to display the loudness of an audio signal. This open source VU meter lights up ten LEDs to show how loud a mono audio signal is. Two of these can be made to show the loudness of each channel in a stereo signal. This circuit is similar to "Mono VU Meter Breadboard" except it is built on a PCB and requires soldering skills to assemble.]]>
 		</description>
 		<!-- The license tag should be redundant with license notices in the source files and a license file include in a <file> tag. The license tag will be used to easily identify projects based on their licenses and permissible uses. -->
 		<license url="./files/TAPR_Open_Hardware_License_v1.0.txt">
