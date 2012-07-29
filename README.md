@@ -1,6 +1,6 @@
 #oProject
 
-A format for open source hardware project documentation. oProject is currently being developed for deployment on [Open Hardware Hub](). oProject is an open specification that will be developed based on community feedback. The goal of oProject is to provide a simple framework for documenting everything about an open source hardware project that is needed for replication of that project.
+A format for open source hardware project documentation. oProject is currently being developed for deployment on [Open Hardware Hub](http://www.openhardwarehub.com/). oProject is an open specification that will be developed based on community feedback. The goal of oProject is to provide a simple framework for documenting everything about an open source hardware project that is needed for replication of that project.
 
 ##Summary of Use
 
