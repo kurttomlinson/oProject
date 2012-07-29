@@ -50,6 +50,7 @@ The steps file gives step-by-step instructions for building the project from the
 		*	description - Content: A detailed, HTML-formatted explanation of how to execute the step. Attributes: None.
 		*	images - Content: None. Attributes: None.
 			*	image - Content: None. Attributes: "url" is a relative path to the image. "order" determines the order in which the images are shown. Images are shown in ascending order starting with 1.
+
 ##Schema
 
 The XML schema file for oProject can be found in the [Schemas](https://github.com/kurttomlinson/oProject/tree/master/Schemas) folder.
