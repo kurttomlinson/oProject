@@ -1,18 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<root>
-	<project>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Kurt/Desktop/oProject/Schemas/oProject.xsd">
+	<project_description>
 		<name>Mono VU Meter PCB</name>
 		<author>kurt</author>
-		<image href="./project_images/af95fc10ed38c4663aaa54a97ad8db2cdfb1ef97.jpg" order="1">
-			Completed Mono VU Meter PCB
-		</image>
-		<video href="http://www.youtube.com/watch?v=4QJKJ-6NRYU" />
+        <images>
+    		<image url="./project_images/af95fc10ed38c4663aaa54a97ad8db2cdfb1ef97.jpg" order="1">
+    			<description>Completed Mono VU Meter PCB</description>
+    		</image>
+        </images>
+		<video url="http://www.youtube.com/watch?v=4QJKJ-6NRYU" />
 		<description>
 			A VU meter is used to display the loudness of an audio signal. This open source VU meter lights up ten LEDs to show how loud a mono audio signal is. Two of these can be made to show the loudness of each channel in a stereo signal. This circuit is similar to "Mono VU Meter Breadboard" except it is built on a PCB and requires soldering skills to assemble.
 		</description>
 		<!-- The license tag should be redundant with license notices in the source files and a license file include in a <file> tag. The license tag will be used to easily identify projects based on their licenses and permissible uses. -->
-		<license href="./files/TAPR_Open_Hardware_License_v1.0.txt">
-			TAPR Open Hardware License v1.0
+		<license url="./files/TAPR_Open_Hardware_License_v1.0.txt">
+			<name>TAPR Open Hardware License v1.0</name>
 		</license>
-	</project>
-</root>
+	</project_description>
+</project>

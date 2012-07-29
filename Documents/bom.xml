@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Kurt/Desktop/oProject/Schemas/oProject.xsd">
+	<parts>
+		<part order="1" url="http://octopart.com/sj1-3524ng-cui-223860">
+			<SKU>SJ1-3524NG</SKU>
+			<description>CONN JACK STEREO R/A 4PIN 3.5MM</description>
+			<quantity>1</quantity>
+			<!-- external_reference is optional. omit if custom -->
+            <external_reference>
+                <external_id>CP1-3524NG-ND</external_id>
+                <external_source>digikey</external_source>
+            </external_reference>
+			<image url="./part_images/a974efb705c2238d6a016c76d206c63269ea15c4-.jpg"/>
+		</part>
+		<part order="2" url="http://octopart.com/lm3916n-1%2Fnopb-national+semiconductor-2328623">
+			<SKU>LM3916N-1</SKU>
+			<description>LED BAR GRAPH DRIVER, 3916, DIP18; LED Driver Application:Power Meter, VU Meter; Topology:Linear; No. of Outputs:10; Output Current:30mA; Output Voltage:17V; Input Voltage:3V to 25V; Dimming Control Type:Analogue; Operating Temperature Range:0°C to +70°C; Driver Case Style:DIP; SVHC:No SVHC (20-Jun-2011); Base Number:3916; Character Type:Bargraph; Device Marking:LM3916N-1; Device Type:LED; IC Generic Number:3916; IC Temperature Range:Commercial; Interface Type:Common Anode; LED Display Type:Dot / Bar; Logic Function Number:3916; No. of Pins:18; Operating Temperature Max:70°C; Operating Temperature Min:0°C; Output Voltage Max:1.34V; Package / Case:DIP; Supply Voltage Max:25V; Supply Voltage Min:3V; Termination Type:Through Hole</description>
+			<quantity>1</quantity>
+			<!-- external_reference is optional. omit if custom -->
+            <external_reference>
+                <external_id>LM3916N-1-ND</external_id>
+                <external_source>digikey</external_source>
+            </external_reference>
+			<image url="./part_images/3fded271729ab570e419b2879e01e68d9c1b38a3.jpg"/>
+		</part>
+		<part order="3" url="http://octopart.com/ct6ep103-copal-576673">
+			<SKU>CT6EP103</SKU>
+			<description>TRIMMER 10K OHM 0.5W TH</description>
+			<quantity>1</quantity>
+			<!-- external_reference is optional. omit if custom -->
+            <external_reference>
+                <external_id>CT6EP103-ND</external_id>
+                <external_source>digikey</external_source>
+            </external_reference>
+			<image url="./part_images/cf767e5ea21f9ba1ad6d170149edf00a529c7fbd-.jpg"/>
+		</part>
+		<part order="4" url="http://octopart.com/uvr1a471med-nichicon-202031">
+			<SKU>UVR1A471MED</SKU>
+			<description>CAPACITOR ALUM ELECT 470UF, 10V, RADIAL; Capacitor Dielectric Type:Aluminium Electrolytic; Capacitance:470µF; Capacitance Tolerance:± 20%; Voltage Rating:10V; Series:VR; Life Time @ Temperature:1000 hours @ 85°C; Height:11mm ;RoHS Compliant: Yes</description>
+			<quantity>1</quantity>
+			<!-- external_reference is optional. omit if custom -->
+            <external_reference>
+                <external_id>493-1024-ND</external_id>
+                <external_source>digikey</external_source>
+            </external_reference>
+			<image url="./part_images/274c72f3026c830cb18989b02da51cf2038d2f2d-.jpg"/>
+		</part>
+		<part order="5" url="http://octopart.com/bs6i-mpd-154941">
+			<SKU>BS6I</SKU>
+			<description>SNAPS 9V 6&quot; LEADS I-STYLE</description>
+			<quantity>1</quantity>
+			<!-- external_reference is optional. omit if custom -->
+            <external_reference>
+                <external_id>BS6I-ND</external_id>
+                <external_source>digikey</external_source>
+            </external_reference>
+			<image url="./part_images/750ce2dcceaf752266214a5e57c209b74d3212d9-.jpg"/>
+		</part>
+		<part order="6" url="http://octopart.com/wp7113lid-kingbright-5355892">
+			<SKU>WP7113LID</SKU>
+			<description>5MM LOW CURRENT RED LED, LAMP THOLE, BULK</description>
+			<quantity>10</quantity>
+			<!-- external_reference is optional. omit if custom -->
+            <external_reference>
+                <external_id>754-1266-ND</external_id>
+                <external_source>digikey</external_source>
+            </external_reference>
+			<image url="./part_images/b10fcd91e54061e9748ca26c34782bc79400bf95-.jpg"/>
+		</part>
+	</parts>
+</project>

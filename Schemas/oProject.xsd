@@ -4,6 +4,7 @@
     <xs:element name="project" type="typeProject" />
     <xs:complexType name="typeProject">
         <xs:all>
+            <xs:element name="manifest" type="typeManifest" minOccurs="0" />
             <xs:element name="parts" type="typeParts" minOccurs="0" />
             <xs:element name="steps" type="typeSteps" minOccurs="0" />
             <xs:element name="downloads" type="typeDownloads" minOccurs="0" />
@@ -20,7 +21,7 @@
             <xs:element name="SKU" type="xs:normalizedString" />
             <xs:element name="description" type="xs:string" />
             <xs:element name="quantity" type="xs:positiveInteger" />
-            <xs:element name="image" type="typeImage" minOccurs="0" />
+            <xs:element name="image" type="typeImageSingle" minOccurs="0" />
             <xs:element name="external_reference" type="typeExternalReference" minOccurs="0" />
         </xs:all>
         <xs:attribute name="url" type="xs:anyURI" use="required" />
@@ -33,10 +34,16 @@
     </xs:complexType>
     <xs:complexType name="typeImage">
         <xs:all>
-            <xs:element name="description" type="xs:token" />
+            <xs:element name="description" type="xs:token" minOccurs="0" />
         </xs:all>
         <xs:attribute name="url" type="xs:anyURI" use="required" />
         <xs:attribute name="order" type="xs:positiveInteger" use="required" />
+    </xs:complexType>
+    <xs:complexType name="typeImageSingle">
+        <xs:all>
+            <xs:element name="description" type="xs:token" minOccurs="0" />
+        </xs:all>
+        <xs:attribute name="url" type="xs:anyURI" use="required" />
     </xs:complexType>
     <xs:complexType name="typeExternalReference">
         <xs:all>
@@ -81,6 +88,8 @@
             <xs:element name="description" type="xs:string" />
             <xs:element name="author" type="xs:normalizedString" />
             <xs:element name="license" type="typeLicense" minOccurs="0" />
+            <xs:element name="video" type="typeVideo" />
+            <xs:element name="images" type="typeImages" />
         </xs:all>
     </xs:complexType>
     <xs:complexType name="typeLicense">
@@ -88,5 +97,14 @@
             <xs:element name="name" type="xs:normalizedString" />
         </xs:all>
         <xs:attribute name="url" type="xs:anyURI" use="required" />
+    </xs:complexType>
+    <xs:complexType name="typeVideo">
+        <xs:all>
+            <xs:element name="description" type="xs:token" minOccurs="0" />
+        </xs:all>
+        <xs:attribute name="url" type="xs:anyURI" />
+    </xs:complexType>
+    <xs:complexType name="typeManifest">
+        <xs:attribute name="url" type="xs:anyURI" />
     </xs:complexType>
 </xs:schema>

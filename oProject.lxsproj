@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<XmlStudioProject Version="10.1.2.4113">
+  <Project Name="">
+    <Folder Name="Documents">
+      <File Name="bom.xml" />
+      <File Name="files.xml" />
+      <File Name="manifest.xml" />
+      <File Name="project.xml" />
+      <File Name="steps.xml" />
+    </Folder>
+    <Folder Name="Schemas">
+      <File Name="oProject.xsd" />
+    </Folder>
+    <Folder Name="Transforms" />
+  </Project>
+</XmlStudioProject>
