@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XmlStudioProjectOptions Version="10.1.2.4113">
   <File>.\Schemas\oProject.xsd</File>
-  <File>.\Documents\bom.xml</File>
 </XmlStudioProjectOptions>
