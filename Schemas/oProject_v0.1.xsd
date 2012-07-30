@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema elementFormDefault="qualified" version="1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="project" type="typeProject" />
+    <xs:complexType name="typeProject">
+        <xs:all>
+            <xs:element name="manifest" type="typeManifest" minOccurs="0" />
+            <xs:element name="parts" type="typeParts" minOccurs="0" />
+            <xs:element name="steps" type="typeSteps" minOccurs="0" />
+            <xs:element name="downloads" type="typeDownloads" minOccurs="0" />
+            <xs:element name="project_description" type="typeProjectDescription" minOccurs="0" />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="typeParts">
+        <xs:sequence>
+            <xs:element name="part" type="typePart" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typePart">
+        <xs:all>
+            <xs:element name="SKU" type="xs:normalizedString" />
+            <xs:element name="description" type="xs:string" />
+            <xs:element name="quantity" type="xs:positiveInteger" />
+            <xs:element name="image" type="typeImageSingle" minOccurs="0" />
+            <xs:element name="external_reference" type="typeExternalReference" minOccurs="0" />
+        </xs:all>
+        <xs:attribute name="url" type="xs:anyURI" use="required" />
+        <xs:attribute name="order" type="xs:positiveInteger" use="required" />
+    </xs:complexType>
+    <xs:complexType name="typeImages">
+        <xs:sequence>
+            <xs:element name="image" type="typeImage" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeImage">
+        <xs:all>
+            <xs:element name="description" type="xs:token" minOccurs="0" />
+        </xs:all>
+        <xs:attribute name="url" type="xs:anyURI" use="required" />
+        <xs:attribute name="order" type="xs:positiveInteger" use="required" />
+    </xs:complexType>
+    <xs:complexType name="typeImageSingle">
+        <xs:all>
+            <xs:element name="description" type="xs:token" minOccurs="0" />
+        </xs:all>
+        <xs:attribute name="url" type="xs:anyURI" use="required" />
+    </xs:complexType>
+    <xs:complexType name="typeExternalReference">
+        <xs:all>
+            <xs:element name="external_id" type="xs:normalizedString" />
+            <xs:element name="external_source" type="typeExternalSource" />
+        </xs:all>
+    </xs:complexType>
+    <xs:simpleType name="typeExternalSource">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="octopart" />
+            <xs:enumeration value="digikey" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="typeSteps">
+        <xs:sequence>
+            <xs:element name="step" type="typeStep" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeStep">
+        <xs:all>
+            <xs:element name="title" type="xs:normalizedString" />
+            <xs:element name="description" type="xs:string" />
+            <xs:element name="images" type="typeImages" minOccurs="0" />
+        </xs:all>
+        <xs:attribute name="order" type="xs:positiveInteger" use="required" />
+    </xs:complexType>
+    <xs:complexType name="typeDownloads">
+        <xs:sequence>
+            <xs:element name="file" type="typeDownload" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeDownload">
+        <xs:all>
+            <xs:element name="description" type="xs:normalizedString" />
+        </xs:all>
+        <xs:attribute name="url" type="xs:anyURI" use="required" />
+        <xs:attribute name="order" type="xs:positiveInteger" use="required" />
+    </xs:complexType>
+    <xs:complexType name="typeProjectDescription">
+        <xs:all>
+            <xs:element name="name" type="xs:normalizedString" />
+            <xs:element name="description" type="xs:string" />
+            <xs:element name="author" type="xs:normalizedString" />
+            <xs:element name="license" type="typeLicense" minOccurs="0" />
+            <xs:element name="video" type="typeVideo" />
+            <xs:element name="images" type="typeImages" />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="typeLicense">
+        <xs:all>
+            <xs:element name="name" type="xs:normalizedString" />
+        </xs:all>
+        <xs:attribute name="url" type="xs:anyURI" use="required" />
+    </xs:complexType>
+    <xs:complexType name="typeVideo">
+        <xs:all>
+            <xs:element name="description" type="xs:token" minOccurs="0" />
+        </xs:all>
+        <xs:attribute name="url" type="xs:anyURI" />
+    </xs:complexType>
+    <xs:complexType name="typeManifest">
+        <xs:sequence>
+            <xs:element name="file" type="typeXMLFile" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeXMLFile">
+        <xs:attribute name="url" />
+    </xs:complexType>
+</xs:schema>
