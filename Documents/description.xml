@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Kurt/Desktop/oProject/Schemas/oProject.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.openhardwarehub.com/oProject_v0.1.xsd">
 	<project_description>
 		<name>Mono VU Meter PCB</name>
 		<author>kurt</author>

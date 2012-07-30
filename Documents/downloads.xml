@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Kurt/Desktop/oProject/Schemas/oProject.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.openhardwarehub.com/oProject_v0.1.xsd">
 	<downloads>
 		<file url="./files/VU Meter V1.zip" order="1"><description>VU Meter GERBER</description></file>
 		<file url="./files/VU Meter.sch" order="2"><description>VU Meter EAGLE Schematic</description></file>
