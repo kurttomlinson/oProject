@@ -20,6 +20,7 @@
             <xs:element name="SKU" type="xs:normalizedString" />
             <xs:element name="description" type="xs:string" />
             <xs:element name="quantity" type="xs:positiveInteger" />
+            <xs:element name="schematic_id" type="xs:normalizedString" />
             <xs:element name="image" type="typeImageSingle" minOccurs="0" />
             <xs:element name="external_reference" type="typeExternalReference" minOccurs="0" />
         </xs:all>
