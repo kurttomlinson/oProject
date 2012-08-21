@@ -89,7 +89,7 @@
             <xs:element name="author" type="xs:normalizedString" />
             <xs:element name="license" type="typeLicense" minOccurs="0" />
             <xs:element name="video" type="typeVideo" />
-            <xs:element name="images" type="typeImages" />
+            <xs:element name="images" type="typeImages" minOccurs="0" />
         </xs:all>
     </xs:complexType>
     <xs:complexType name="typeLicense">
