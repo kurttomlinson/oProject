@@ -6,7 +6,7 @@
             <xs:element name="manifest" type="typeManifest" minOccurs="0" />
             <xs:element name="parts" type="typeParts" minOccurs="0" />
             <xs:element name="steps" type="typeSteps" minOccurs="0" />
-            <xs:element name="downloads" type="typeDownloads" minOccurs="0" />
+            <xs:element name="files" type="typeFiles" minOccurs="0" />
             <xs:element name="project_description" type="typeProjectDescription" minOccurs="0" />
         </xs:all>
     </xs:complexType>
@@ -70,12 +70,12 @@
         </xs:all>
         <xs:attribute name="order" type="xs:positiveInteger" use="required" />
     </xs:complexType>
-    <xs:complexType name="typeDownloads">
+    <xs:complexType name="typeFiles">
         <xs:sequence>
-            <xs:element name="file" type="typeDownload" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="file" type="typeFile" minOccurs="1" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="typeDownload">
+    <xs:complexType name="typeFile">
         <xs:all>
             <xs:element name="description" type="xs:normalizedString" />
         </xs:all>
