@@ -25,7 +25,7 @@ The description file should hold general information about the project itself.
 ###Downloads file
 The downloads file should those files which are necessary to reproduce your project (such as compiled binaries, GERBER files, and other files that are in a final and usable form. Source code, schematics, and board files should be included in the project directory but not highlighted by the downloads folder. These files are the bare minimum needed to build your project in a production environment.
 
-*	downloads - Content: None. Attributes: None.
+*	files - Content: None. Attributes: None.
 	*	file - Content: A descriptive name for the file. Attributes: "url" is a relative path to the file. "order" determines the order in which the download files are shown. Download files are shown in ascending order starting with 1.
 
 ###Parts file
@@ -39,6 +39,7 @@ The parts file is a bill of materials along with links to suppliers. This makes 
 		*	external\_reference - Content: None. Attributes: None.
 			*	external\_id - Content: The unique id used to identify the part at the external\_source. Attributes: None.
 			*	external\_source - Content: The external source that is used to provide an easy means to quickly acquire the part. Acceptable sources are currently limitied to Digi-Key and Octopart. Attributes: None.
+		*	schematic_id - Content: The identification tokens (such as R1, C1, Q1, etc.) that identify this part in the schematic. This list should be comma delimited and/or use hypens to indicate a range of values (e.g. "R1,R2", "C3-5", or "Q1, Q6-9"). Attributes: None
 		*	image - Content: None. Attributes: "url" is a relative path to the image.
 
 ###Steps file
