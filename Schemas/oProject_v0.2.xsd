@@ -6,7 +6,7 @@
             <xs:element name="manifest" type="typeManifest" minOccurs="0" />
             <xs:element name="parts" type="typeParts" minOccurs="0" />
             <xs:element name="steps" type="typeSteps" minOccurs="0" />
-            <xs:element name="downloads" type="typeDownloads" minOccurs="0" />
+            <xs:element name="files" type="typeFiles" minOccurs="0" />
             <xs:element name="project_description" type="typeProjectDescription" minOccurs="0" />
         </xs:all>
     </xs:complexType>
@@ -36,14 +36,14 @@
         <xs:all>
             <xs:element name="description" type="xs:token" minOccurs="0" />
         </xs:all>
-        <xs:attribute name="url" type="xs:anyURI" use="required" />
+        <xs:attribute name="url" type="xs:normalizedString" use="required" />
         <xs:attribute name="order" type="xs:positiveInteger" use="required" />
     </xs:complexType>
     <xs:complexType name="typeImageSingle">
         <xs:all>
             <xs:element name="description" type="xs:token" minOccurs="0" />
         </xs:all>
-        <xs:attribute name="url" type="xs:anyURI" use="required" />
+        <xs:attribute name="url" type="xs:normalizedString" use="required" />
     </xs:complexType>
     <xs:complexType name="typeExternalReference">
         <xs:all>
@@ -70,16 +70,16 @@
         </xs:all>
         <xs:attribute name="order" type="xs:positiveInteger" use="required" />
     </xs:complexType>
-    <xs:complexType name="typeDownloads">
+    <xs:complexType name="typeFiles">
         <xs:sequence>
-            <xs:element name="file" type="typeDownload" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="file" type="typeFile" minOccurs="1" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="typeDownload">
+    <xs:complexType name="typeFile">
         <xs:all>
             <xs:element name="description" type="xs:normalizedString" />
         </xs:all>
-        <xs:attribute name="url" type="xs:anyURI" use="required" />
+        <xs:attribute name="url" type="xs:normalizedString" use="required" />
         <xs:attribute name="order" type="xs:positiveInteger" use="required" />
     </xs:complexType>
     <xs:complexType name="typeProjectDescription">
@@ -96,13 +96,13 @@
         <xs:all>
             <xs:element name="name" type="xs:normalizedString" />
         </xs:all>
-        <xs:attribute name="url" type="xs:anyURI" use="required" />
+        <xs:attribute name="url" type="xs:normalizedString" use="required" />
     </xs:complexType>
     <xs:complexType name="typeVideo">
         <xs:all>
             <xs:element name="description" type="xs:token" minOccurs="0" />
         </xs:all>
-        <xs:attribute name="url" type="xs:anyURI" />
+        <xs:attribute name="url" type="xs:normalizedString" />
     </xs:complexType>
     <xs:complexType name="typeManifest">
         <xs:sequence>
@@ -110,6 +110,6 @@
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="typeXMLFile">
-        <xs:attribute name="url" />
+        <xs:attribute name="url" type="xs:normalizedString" />
     </xs:complexType>
 </xs:schema>
